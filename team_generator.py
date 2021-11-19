@@ -3,9 +3,11 @@ def generate(team_size):
     if team_size < 2:
         return
     out = open(f'output/Size {team_size}.csv', 'w')
-    for i in range(team_size):
-        print(f'Player {i + 1}', end=',', file=out)
-    print(file=out)
+    team_member = 1
+    while team_member < team_size:
+        print(f'Player {team_member}', end=',', file=out)
+        team_member += 1
+    print(f'Player {team_size}', file=out)
     current = 1
     with open('codes.csv', 'r') as codes:
         for code in codes:
