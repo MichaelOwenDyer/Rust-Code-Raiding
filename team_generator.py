@@ -10,8 +10,8 @@ def generate(team_size):
     print(f'Player {team_size}', file=out)
     current = 1
     with open('codes.csv', 'r') as codes:
-        for code in codes:
-            if current == team_size:
+        for index, code in enumerate(codes):
+            if current == team_size or index == 9999:
                 print(code[:4], file=out)
                 current = 1
             else:
