@@ -47,8 +47,8 @@ pog loot before the zerg came online.
 # Breakdown
 
 The script `team_generator.py` will generate striped .csv files for you, given a range of team sizes. If you would just
-like a single file, enter the same team size twice. Some pre-generated files for team sizes 2 - 20 can be found in the
-`output` directory, and in this
+like a single file, enter the same team size twice. Pre-generated files for team sizes 2 - 100 can be found in the
+`output` directory, and for team sizes 2 - 20 in this
 [Google Sheets document](https://docs.google.com/spreadsheets/d/10VRfXBZ0gLTXefnJBM9CfOjDZZlOhkBDhS46A3SUcO0/edit?usp=sharing).
 
 `probability_generator.py` generates the original code list with two additional columns for individual probability and
